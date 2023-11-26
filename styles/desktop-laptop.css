@@ -1,0 +1,176 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Inter", sans-serif;
+--shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+--color: #166e67;
+--gap: 0.5rem;
+--radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px){
+    body {
+        margin: 2rem;
+        background-color: white;
+        font-size: 0.9rem;
+        color: black;
+        }
+
+        .title {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+    
+        .bx {
+        font-size: 1.1rem;
+        }
+    
+        #registration-form {
+            margin: 5rem 0;
+            padding: 5rem 1rem;
+            background-color: #b3e6f4;
+            border: 1px solid black;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .form-data {
+            height: auto;
+            padding: 0 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container {
+            border: 2px solid white;
+            margin-top: 3rem;
+        }
+        
+        .form-div {
+            background-color: white;
+            border-radius: var(--radius);
+            padding: 1rem 4rem;
+            margin: 1rem;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            box-shadow: var(--shadow);
+
+            transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+        }
+
+        .form-div:hover {
+            background-color: lightseagreen;
+            transition: all 1s cubic-bezier(0.16, 1, 0.5, 1);
+        }
+
+        /* .form-div:hover::after {
+            background-color: white;
+            transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+        } */
+
+        .label {
+            display: flex;
+            align-items: center;
+            column-gap: 0.5rem;
+        }
+    
+        option {
+        display: flex;
+        align-items: center;
+        column-gap: var(--gap);
+        padding: 0.8rem 1rem;
+        text-decoration: none;
+        color: black;
+        }
+
+        .size-option {
+            display: flex;
+            align-items: center;
+            column-gap: 0.2rem;
+        }
+
+        .form-end {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            height: 5rem;
+            margin-top: 4rem;
+        }
+
+        .terms, .buttons {
+            display: flex;
+            flex-direction: row;
+            padding: 1rem 2.4rem;
+            justify-content: space-between;
+            align-items: center;
+            width: auto;
+            column-gap: 0.8rem;
+        }
+
+        .buttons {
+            column-gap: 0.8rem;
+        }
+
+        .terms, .submit, .reset {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            column-gap: 0.5rem;
+            height: 3rem;
+        }
+
+        #submit, #reset {
+            background-color: lightseagreen;
+            color: white;
+            padding: 0.3rem;
+            border-radius: var(--radius);
+            box-shadow: 1px;
+        }
+
+        .input-error-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        .error-message {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            color: rgb(169, 23, 23);
+            font-size: smaller;
+            text-align: center;
+            /* margin-top: 5px; */
+        }
+
+        
+}
+    

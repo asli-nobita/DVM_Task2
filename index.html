@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="styles/desktop-laptop.css">
+    <link rel="stylesheet" href="styles/smartphones.css">
+</head>
+<body>
+
+    <div class="title">
+        <h1>registration form for merch signings</h1>
+    </div>
+
+        <form id="registration-form" action="https://foo.com" method="post">
+            <section class="form-data">
+                <div class="name form-div">
+                    <div class="label">
+                        <i class="bx bx-user"></i>
+                        <label for="name">Name: </label>
+                    </div>
+                    <div class="input-error-container">
+                        <input type="text" id="name" name="name" >
+                        <div class="error-message" id="name-error">
+                            <i class="bx bx-x"></i>
+                            Please enter your name
+                        </div>
+                    </div>
+                </div>
+                <div class="email form-div">
+                    <div class="label">
+                        <i class="bx bx-at"></i>
+                        <label for="email">Email-ID: </label>
+                    </div>
+                    <div class="input-error-container">
+                        <input type="text" id="email" name="email" >
+                        <div class="error-message" id="email-error">
+                            <i class="bx bx-x"></i>
+                            Invalid email address
+                        </div>
+                    </div>
+                </div>
+                <div class="number form-div">
+                    <div class="label">
+                        <i class="bx bx-phone-call"></i>
+                        <label for="number">Phone number: </label>
+                    </div>
+                    <div class="input-error-container">
+                        <input type="number" id="number" value="number" minlength="10" maxlength="10" >
+                        <div class="error-message" id="number-error">
+                            <i class="bx bx-x"></i>
+                            Invalid number
+                        </div>
+                    </div>
+                </div>
+                <div class="bits-id form-div">
+                    <div class="label">
+                        <i class="bx bx-id-card"></i>
+                        <label for="bits-id">BITS ID</label>
+                    </div>
+                    <div class="input-error-container">
+                        <input type="text" id="bits-id" >
+                        <div class="error-message" id="bits-id-error">
+                            <i class="bx bx-x"></i>
+                            Invalid BITS ID
+                        </div>
+                    </div>
+                </div>
+                <div class="hostel form-div">
+                    <div class="label">
+                        <i class="bx bx-home"></i>
+                        <label for="hostel">Hostel: </label>
+                    </div>
+                    <div class="input-error-container">
+                        <select name="hostel" id="hostel">
+                            <option value="">--Select your hostel--</option>
+                            <option value="sr">
+                                Srinivasa Ramanujan
+                            </option>
+                            <option value="shankar">
+                                Shankar
+                            </option>
+                            <option value="vyas">
+                                Vyas
+                            </option>
+                            <option value="ashok">
+                                Ashok
+                            </option>
+                            <option value="rana-pratap">
+                                Rana Pratap
+                            </option>
+                            <option value="malviya">
+                                Malviya
+                            </option>
+                            <option value="gandhi">
+                                Gandhi
+                            </option>
+                            <option value="krishna">
+                                Krishna
+                            </option>
+                            <option value="ram">
+                                Ram
+                            </option>
+                            <option value="budh">
+                                Budh
+                            </option>
+                            <option value="bhagirath">
+                                Bhagirath
+                            </option>
+                            <option value="meera">
+                                Meera
+                            </option>
+                            <option value="cvr">
+                                CVR
+                            </option>
+                            <option value="vk">
+                                VK
+                            </option>
+                        </select>
+                        <div class="error-message" id="hostel-error">
+                            <i class="bx bx-x"></i>
+                            Please select a hostel
+                        </div>
+                    </div>
+                </div>
+                <div class="size-options form-div">
+                    Size:
+                    <div class="size-option">
+                        <input type="radio" id="xl" value="xl" name="size">
+                        <label for="xl">XL</label>
+                    </div>
+                    <div class="size-option">
+                        <input type="radio" id="lg" value="lg" name="size">
+                        <label for="l">L</label>
+                    </div>
+                    <div class="size-option">
+                        <input type="radio" id="md" value="md" name="size">
+                        <label for="m">M</label>
+                    </div>
+                    <div class="size-option">
+                        <input type="radio" id="sm" value="sm" name="size">
+                        <label for="sm">S</label>
+                    </div>
+                    <div class="size-option">
+                        <input type="radio" id="xs" value="xs" name="size">
+                        <label for="xs">XS</label>
+                    </div>
+                    <div class="error-message" id="size-error">
+                        <i class="bx bx-x"></i>
+                        Please choose a size
+                    </div>
+                </div>
+                    <div class="form-end">
+                        <div class="terms ">
+                            <div class="input-error-container">
+                                <input type="checkbox" name="t&c" id="checkbox">
+                                <div class="error-message" id="terms-error">
+                                    <i class="bx bx-x"></i>
+                                    Agree to the terms and conditions
+                                </div>
+                            </div>
+                            <label for="t&c">I agree to the Terms & Conditions.</label>
+                        </div>
+                
+                        <div class="buttons">
+                            <div class="submit"><input type="submit" id="submit">Submit form</div>
+                            <div class="reset"><input type="reset" id="reset">Reset form</div>
+                        </div>
+                    </div>
+            </section>
+
+                <section class="image-container">
+                    <img src="https://bitspilani.campusmall.in/media/catalog/product/cache/51b20d92db92cfa79e65bf00656c43a8/b/i/bits_pilani_sweatshirt_beige_2.jpg" alt="merch-img" width="300" height="300">
+                </section>
+        </form>
+
+       
+
+</body>
+<script src="script.js"></script>
+</html>
