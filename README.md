@@ -1,4 +1,3 @@
-# DVM_Task2
 # Creating a registration form using basic HTML, CSS and JavaScript
 
 Components of this project include -
