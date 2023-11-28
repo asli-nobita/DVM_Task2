@@ -8,7 +8,9 @@ box-sizing: border-box;
 font-family: "Inter", sans-serif;
 --shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
---color: #166e67;
+--color: #b3e6f4;
+--background-color: white;
+--error-color: rgb(169, 23, 23);
 --gap: 0.5rem;
 --radius: 5px;
 }
@@ -21,8 +23,8 @@ input::-webkit-inner-spin-button {
 
 @media screen and (min-width: 768px){
     body {
-        margin: 2rem;
-        background-color: white;
+        margin: 2rem;   
+        background: var(--background-color);
         font-size: 0.9rem;
         color: black;
         }
@@ -39,7 +41,7 @@ input::-webkit-inner-spin-button {
         #registration-form {
             margin: 5rem 0;
             padding: 5rem 1rem;
-            background-color: #b3e6f4;
+            background-color: var(--color);
             border: 1px solid black;
             border-radius: var(--radius);
             box-shadow: var(--shadow);
@@ -118,23 +120,34 @@ input::-webkit-inner-spin-button {
             align-items: center;
             height: 5rem;
             margin-top: 4rem;
+            column-gap: 2rem;
         }
 
-        .terms, .buttons {
+        .terms {
             display: flex;
             flex-direction: row;
-            padding: 1rem 2.4rem;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            background-color: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            column-gap: 0.5rem;
+            height: 3rem;
+        }
+
+        .buttons {
+            column-gap: 0.8rem;
+            display: flex;
+            flex-direction: row;
+            /* padding: 1rem 2.4rem; */
             justify-content: space-between;
             align-items: center;
             width: auto;
             column-gap: 0.8rem;
         }
 
-        .buttons {
-            column-gap: 0.8rem;
-        }
-
-        .terms, .submit, .reset {
+        .submit, .reset {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -165,12 +178,10 @@ input::-webkit-inner-spin-button {
             display: none;
             align-items: center;
             justify-content: center;
-            color: rgb(169, 23, 23);
+            color: var(--error-color);
             font-size: smaller;
             text-align: center;
-            /* margin-top: 5px; */
         }
 
-        
 }
     
