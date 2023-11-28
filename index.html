@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,7 +22,7 @@
                         <label for="name">Name: </label>
                     </div>
                     <div class="input-error-container">
-                        <input type="text" id="name" name="name" >
+                        <input type="text" id="name" name="name" autocomplete="name">
                         <div class="error-message" id="name-error">
                             <i class="bx bx-x"></i>
                             Please enter your name
@@ -34,7 +35,7 @@
                         <label for="email">Email-ID: </label>
                     </div>
                     <div class="input-error-container">
-                        <input type="text" id="email" name="email" >
+                        <input type="text" id="email" name="email" autocomplete="email">
                         <div class="error-message" id="email-error">
                             <i class="bx bx-x"></i>
                             Invalid email address
@@ -47,7 +48,7 @@
                         <label for="number">Phone number: </label>
                     </div>
                     <div class="input-error-container">
-                        <input type="number" id="number" value="number" minlength="10" maxlength="10" >
+                        <input type="number" id="number" value="number" minlength="10" maxlength="10">
                         <div class="error-message" id="number-error">
                             <i class="bx bx-x"></i>
                             Invalid number
@@ -132,11 +133,11 @@
                     </div>
                     <div class="size-option">
                         <input type="radio" id="lg" value="lg" name="size">
-                        <label for="l">L</label>
+                        <label for="lg">L</label>
                     </div>
                     <div class="size-option">
                         <input type="radio" id="md" value="md" name="size">
-                        <label for="m">M</label>
+                        <label for="md">M</label>
                     </div>
                     <div class="size-option">
                         <input type="radio" id="sm" value="sm" name="size">
@@ -160,7 +161,7 @@
                                     Agree to the terms and conditions
                                 </div>
                             </div>
-                            <label for="t&c">I agree to the Terms & Conditions.</label>
+                            <label for="checkbox">I agree to the Terms & Conditions.</label>
                         </div>
                 
                         <div class="buttons">
@@ -174,8 +175,6 @@
                     <img src="https://bitspilani.campusmall.in/media/catalog/product/cache/51b20d92db92cfa79e65bf00656c43a8/b/i/bits_pilani_sweatshirt_beige_2.jpg" alt="merch-img" width="300" height="300">
                 </section>
         </form>
-
-       
 
 </body>
 <script src="script.js"></script>
