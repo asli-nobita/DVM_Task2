@@ -2,6 +2,8 @@
 
 let form = document.getElementById('registration-form');
 
+let successModal = document.querySelector('.success-modal');
+
 var formData = {};
 
 function validateForm() {
@@ -35,12 +37,12 @@ function validateForm() {
     isValid = false;
   }
 
-  if (formData.hostel === '') {
+  if (formData.hostel.trim() === '') {
     document.getElementById('hostel-error').style.display = 'flex';
     isValid = false;
   }
 
-  if (formData.size === '') {
+  if (formData.size.trim() === '') {
     document.getElementById('size-error').style.display = 'flex';
     isValid = false;
   }
@@ -88,15 +90,24 @@ function saveFormData() {
 }
 
 function fillForm() {
+  // fetch previous form data from local storage
   var storedData = localStorage.getItem('formData');
   if (storedData) {
     var newData = JSON.parse(storedData);
-    formData.name = newData.name;
-    formData.email = newData.email;
-    formData.number = newData.number;
-    formData.bitsId = newData.bitsId;
-    formData.hostel = newData.hostel;
-    formData.size = newData.size;
+
+    // autofill form input elements from local storage
+    document.getElementById('name').value = newData.name;
+    document.getElementById('email').value = newData.email;
+    document.getElementById('number').value = newData.number;
+    document.getElementById('bits-id').value = newData.bitsId;
+    document.getElementById('hostel').value = newData.hostel;
+    var sizeOptions = document.getElementsByName('size');
+    for (let i = 0; i < sizeOptions.length; i++) {
+      if (sizeOptions[i].value === newData.size) {
+        sizeOptions[i].checked = true;
+        break;
+      }
+    }
   }
 }
 
